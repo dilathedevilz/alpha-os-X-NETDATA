@@ -10,6 +10,7 @@ buat pengganti network monitor nya firmware sebelah masbro
 ## Syarat Pasang
 
 - Terinstall package `netdata`
+- jika belum menginstall `netdata ubus` bisa eksekusi command ini di terminal `opkg update && opkg install netdata ubus`
 - IP Gateway harus `192.168.1.1` ( Soalnya kalau selain itu bakal ngedit banyak masbroooooo. )
 
 
