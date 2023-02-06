@@ -7,12 +7,22 @@ buat pengganti network monitor nya firmware sebelah masbro
 - Realtime Monitoring 
 - Support semua firmware ( kek fw sebelah )
 
+
+<details><summary>Preview Screenshoot</summary>
+<p>
+  
+![image](https://raw.githubusercontent.com/derisamedia/alpha-os-X-NETDATA/main/preview.png)
+  
+![image](https://raw.githubusercontent.com/derisamedia/alpha-os-X-NETDATA/main/preview2.png)
+  
+</p>
+</details>
+
 ## Syarat Pasang
 
 - Terinstall package `netdata ubus`
 - jika belum menginstall `netdata ubus` bisa eksekusi command ini di terminal `opkg update && opkg install netdata ubus`
 - IP Gateway harus `192.168.1.1` ( Soalnya kalau selain itu bakal ngedit banyak masbroooooo. )
-
 
 ## Cara Install Netdata
 ### Cara Susah
