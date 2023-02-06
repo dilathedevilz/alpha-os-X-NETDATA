@@ -23,11 +23,24 @@ lalu ketikan
 
 "/sbin/netdata.sh"
 
+atau
+"cd sbin"
+
+"netdata.sh"
+
 kalo misalkan gagal coba ketikan
 
 "chmod +x /sbin/netdata.sh"
 
 "/sbin/netdata.sh"
+
+atau
+
+"cd sbin"
+
+"chmod +x netdata.sh"
+
+"netdata.sh"
 
 lalu buka crontab (task schedule) masbro
 lalu ketik 
