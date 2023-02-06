@@ -37,7 +37,7 @@ Buat yang mau donasi silahkan masbro
 ## Contributor
 - [deri sahertian](https://github.com/derisamedia)
 - [dimas vito](https://github.com/nosignals)
-- [chandika nurdiansyah]https://github.com/chandika7d)
+- [chandika nurdiansyah](https://github.com/chandika7d)
 ## Tentang
 
 
