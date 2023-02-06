@@ -42,10 +42,26 @@ atau
 
 "netdata.sh"
 
+kalo masih gagal juga, pakai jurus ninjutsu
+
+"ubus call system board > /www/netdata/ubus/sysboard.json"
+
+"ubus call network.interface.lan status > /www/netdata/ubus/brlan.json"
+
+"ubus call network.interface.wan status > /www/netdata/ubus/eth1.json"
+
 lalu buka crontab (task schedule) masbro
 lalu ketik 
 
 "* */5 * * * /sbin/netdata.sh"
+
+jika metode yang "netdata.sh" gagal pake ini masbro
+
+"* */5 * * * /bin/ubus call system board > /www/netdata/ubus/sysboard.json"
+
+"* */5 * * * /bin/ubus call network.interface.lan status > /www/netdata/ubus/brlan.json"
+
+"* */5 * * * /bin/ubus call network.interface.wan status > /www/netdata/ubus/eth1.json"
 
 (hapus tanda kutip masbro)
 
