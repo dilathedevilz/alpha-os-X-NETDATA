@@ -42,6 +42,8 @@ saweria.co/derisamedia
 
 salam masbro capybara
 
+kalau mau biar ada menu di LuCi ,copykan aja alphanetdata.lua dan alphanetdata.htm ke masing masing direktori yang sesuai dengan yang tercantum di deskripsinya masbro
+
 contributor:
 [deri sahertian]
 [dimas vito]
