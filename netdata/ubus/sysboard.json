@@ -1,0 +1,15 @@
+{
+	"kernel": "5.4.172-flippy-69+o",
+	"hostname": "Malas_Masbro",
+	"system": "ARMv8 Processor rev 4",
+	"model": "Amlogic Meson GXL (S905X) P212 Development Board",
+	"board_name": "amlogic,p212",
+	"rootfs_type": "btrfs",
+	"release": {
+		"distribution": "OpenWrt",
+		"version": "SNAPSHOT",
+		"revision": "r0-b118efa",
+		"target": "armvirt/64",
+		"description": "OpenWrt SNAPSHOT"
+	}
+}
