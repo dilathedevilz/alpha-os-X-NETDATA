@@ -34,3 +34,8 @@ Buat yang mau donasi silakan masbro
 di saweria.co/derisamedia
 
 salam masbro capybara
+
+contributor:
+deri sahertian
+dimas vito
+chandika nurdiansyah
