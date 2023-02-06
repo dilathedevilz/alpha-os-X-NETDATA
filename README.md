@@ -1,88 +1,46 @@
-# alpha-os-X-NETDATA
+
+# alpha-os-X-NETDATA 
 buat pengganti network monitor nya firmware sebelah masbro
+## Fitur
+
+- Monitoring NETDATA
+- Realtime Monitoring 
+- Support semua firmware ( kek fw sebelah )
+
+## Syarat Pasang
+
+- Terinstall package `netdata`
+- IP Gateway harus `192.168.1.1` ( Soalnya kalau selain itu bakal ngedit banyak masbroooooo. )
 
 
-syarat yang di perlukan :
+## Cara Install Netdata
 
-sudah terinstall netdata ,kalo belum silakan install dulu masbro
+- Download / Clone repository ini
+- Copy Folder `netdata` ke folder `/www/`
+- Buka folder `/www/netdata/execute` masbro
+- Copy / Cut file `netdata.sh` ke folder `/sbin/`
+- Lalu ketik di terminal `chmod +x /sbin/netdata.sh`
+- Lanjot ketik di terminal `/sbin/netdata.sh`
+- Edit crontab / Scheduled task di LuCi dan tambahkan command `* */5 * * * /sbin/netdata.sh`
+- Tinggal Pancal di website http://192.168.1.1/netdata/
+Ready pamer dah akwoakaoak
 
-ip harus 192.168.1.1 karena banyak datanya masbro kalo ipnya beda ,rubahnya repot masbro
+## Cara nambah di menu LuCi Dashboard 
+
+- copy aja `alphanetdata.lua` dan `alphanetdata.htm` ke masing masing direktori yang sesuai dengan yang tercantum di deskripsinya masbro
+
+## Donasi
+
+Buat yang mau donasi silahkan masbro
+- [ Saweria ](https://saweria.co/derisamedia)
+
+## Contributor
+- [deri sahertian](https://github.com/derisamedia)
+- [dimas vito](https://github.com/nosignals)
+- [chandika nurdiansyah]( )
+## Tentang
 
 
-cara install :
+Property milik ***Alpha OS, derisamedia, indo-wrt, DBAI, Yayasan Gterongers***. Dilarang ***ngemod mod dimod remod remake diclaim*** lalu dikunci masbro. Capek bikin nya masbro.
 
-copy si folder "netdata" masbro ke "/www/"
-
-lalu buka folder "netdata" lalu buka lagi folder "execute" masbro
-
-copy si "netdata.sh" ke folder "/sbin/" masbro
-
-
-lalu buka terminal masbro
-lalu ketikan 
-
-"/sbin/netdata.sh"
-
-atau
-"cd sbin"
-
-"netdata.sh"
-
-kalo misalkan gagal coba ketikan
-
-"chmod +x /sbin/netdata.sh"
-
-"/sbin/netdata.sh"
-
-atau
-
-"cd sbin"
-
-"chmod +x netdata.sh"
-
-"netdata.sh"
-
-kalo masih gagal juga, pakai jurus ninjutsu
-
-"ubus call system board > /www/netdata/ubus/sysboard.json"
-
-"ubus call network.interface.lan status > /www/netdata/ubus/brlan.json"
-
-"ubus call network.interface.wan status > /www/netdata/ubus/eth1.json"
-
-lalu buka crontab (task schedule) masbro
-lalu ketik 
-
-"* */5 * * * /sbin/netdata.sh"
-
-jika metode yang "netdata.sh" gagal pake ini masbro
-
-"* */5 * * * /bin/ubus call system board > /www/netdata/ubus/sysboard.json"
-
-"* */5 * * * /bin/ubus call network.interface.lan status > /www/netdata/ubus/brlan.json"
-
-"* */5 * * * /bin/ubus call network.interface.wan status > /www/netdata/ubus/eth1.json"
-
-(hapus tanda kutip masbro)
-
-tinggal buka deh masbro 
-http://192.18.1.1/netdata/
-
-siap pamer masbro
-
-property milik Alpha OS,derisamedia,indo-wrt,DBAI,Yayasan Gterongers.
-Dilarang ngemod mod dimod remod remake diclaim lalu dikunci masbro. Capek bikin nya masbro.
-
-Buat yang mau donasi silakan masbro
-di 
-
-saweria.co/derisamedia
-
-salam masbro capybara
-
-kalau mau biar ada menu di LuCi ,copykan aja alphanetdata.lua dan alphanetdata.htm ke masing masing direktori yang sesuai dengan yang tercantum di deskripsinya masbro
-
-contributor:
-[deri sahertian]
-[dimas vito]
-[chandika nurdiansyah]
+### Salam Copybara
