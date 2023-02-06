@@ -12,8 +12,11 @@ ip harus 192.168.1.1 karena banyak datanya masbro kalo ipnya beda ,rubahnya repo
 cara install :
 
 copy si folder "netdata" masbro ke "/www/"
+
 lalu buka folder netdata lalu buka lagi folder execute masbro
-copy si netdata.sh ke folder /sbin/ masbro
+
+copy si "netdata.sh" ke folder "/sbin/" masbro
+
 
 lalu buka terminal masbro
 lalu ketikan 
