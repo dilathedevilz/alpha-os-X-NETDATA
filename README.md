@@ -5,7 +5,9 @@ buat pengganti network monitor nya firmware sebelah masbro
 syarat yang di perlukan
 
 sudah terinstall netdata ,kalo belum silakan install dulu masbro
+
 ip harus 192.168.1.1 karena banyak datanya masbro kalo ipnya beda ,rubahnya repot masbro
+
 
 cara install
 
