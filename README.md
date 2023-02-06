@@ -37,6 +37,6 @@ di saweria.co/derisamedia
 salam masbro capybara
 
 contributor:
-deri sahertian
-dimas vito
-chandika nurdiansyah
+[deri sahertian]
+[dimas vito]
+[chandika nurdiansyah]
