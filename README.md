@@ -14,13 +14,14 @@ copy si netdata.sh ke folder /sbin/ masbro
 lalu buka terminal masbro
 lalu ketikan 
 
-/sbin/netdata.sh
+"/sbin/netdata.sh"
 
 lalu buka crontab masbro
 lalu ketik 
 
-* */5 * * * /sbin/netdata.sh
+"* */5 * * * /sbin/netdata.sh"
 
+(hapus tanda kutip masbro)
 
 tinggal buka deh masbro 
 http://192.18.1.1/netdata/
