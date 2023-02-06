@@ -35,6 +35,31 @@ Ready pamer dah akwoakaoak
 - Jalankan lagi `bash installer.sh` dan tunggu sampai proses selesai
 - done, tinggal pancal http://192.168.1.1/netdata/
 
+## Konfigurasi Interface
+
+Edit file `/sbin/netdata.sh` yang didalamnya berisi 
+```bash
+#!/bin/bash
+
+ubus call system board > /www/netdata/ubus/sysboard.json
+ubus call network.interface.lan status > /www/netdata/ubus/brlan.json
+ubus call network.interface.wan status > /www/netdata/ubus/eth1.json
+```
+- Untuk mengubah Interface LAN `network.interface.lan` ganti dengan Interface yang ada di `ubus list`
+- Untuk mengubah Interface WAN `network.interface.wan` ganti dengan Interface yang ada di `ubus list`
+- Untuk Interface yang bisa digunakan bisa cek di terminal `ubus list | grep network.interface` untuk mengetahui interface yang bisa digunakan
+- Contoh hasil command `ubus list | grep network.interface`
+```bash
+~# ubus list | grep network.interface
+network.interface
+network.interface.eth1
+network.interface.lan
+network.interface.loopback
+network.interface.tether
+network.interface.wwan0
+```
+
+
 ## Cara nambah di menu LuCi Dashboard 
 
 - copy aja `alphanetdata.lua` dan `alphanetdata.htm` ke masing masing direktori yang sesuai dengan yang tercantum di deskripsinya masbro
@@ -51,6 +76,6 @@ Buat yang mau donasi silahkan masbro
 ## Tentang
 
 
-Property milik ***Alpha OS, derisamedia, indo-wrt, DBAI, Yayasan Gterongers***. Dilarang ***ngemod mod dimod remod remake diclaim*** lalu dikunci masbro. Capek bikin nya masbro.
+Property milik **Alpha OS, derisamedia, indo-wrt, DBAI, Yayasan Gterongers**. Dilarang **ngemod mod dimod remod remake diclaim** lalu dikunci masbro. Capek bikin nya masbro.
 
 ### Salam Copybara
