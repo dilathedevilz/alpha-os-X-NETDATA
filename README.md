@@ -13,7 +13,7 @@ cara install :
 
 copy si folder "netdata" masbro ke "/www/"
 
-lalu buka folder "netdata" lalu buka lagi folder execute masbro
+lalu buka folder "netdata" lalu buka lagi folder "execute" masbro
 
 copy si "netdata.sh" ke folder "/sbin/" masbro
 
