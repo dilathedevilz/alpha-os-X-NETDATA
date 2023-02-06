@@ -20,7 +20,7 @@ lalu ketikan
 
 "/sbin/netdata.sh"
 
-lalu buka crontab masbro
+lalu buka crontab (task schedule) masbro
 lalu ketik 
 
 "* */5 * * * /sbin/netdata.sh"
@@ -35,8 +35,10 @@ siap pamer masbro
 property milik Alpha OS,derisamedia,indo-wrt,DBAI,Yayasan Gterongers.
 Dilarang ngemod mod dimod remod remake diclaim lalu dikunci masbro. Capek bikin nya masbro.
 
-Buat yang mau donasi silakan masbro 
-di saweria.co/derisamedia
+Buat yang mau donasi silakan masbro
+di 
+
+saweria.co/derisamedia
 
 salam masbro capybara
 
