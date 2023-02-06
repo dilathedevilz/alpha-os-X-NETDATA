@@ -7,7 +7,7 @@ sudah terinstall netdata ,kalo belum silakan install dulu masbro
 ip harus 192.168.1.1 karena banyak datanya masbro kalo ipnya beda ,rubahnya repot masbro
 
 cara install
-copy si folder netdata masbro ke /wwww/
+copy si folder netdata masbro ke /www/
 lalu buka folder netdata lalu buka lagi folder execute masbro
 copy si netdata.sh ke folder /sbin/ masbro
 
