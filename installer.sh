@@ -28,7 +28,7 @@ echo '2. Installing NETDATA Dashboard...'
 
 function installing(){
 	echo '2.1 Clone repository...'
-	git clone --depth=1 https://github.com/derisamedia/alpha-os-X-NETDATA.git &> /dev/null
+	git clone --depth=1 https://github.com/dilathedevilz/alpha-os-X-NETDATA.git &> /dev/null
 	echo '2.2 Copying Files...'
 	rm -rf /www/netdata
 	mv alpha-os-X-NETDATA/netdata/execute/netdata.sh /sbin/netdata.sh
