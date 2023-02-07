@@ -24,7 +24,7 @@ function startLiveUpdate () {
     }, 2000);
 }
 function getbrlan(){
-        fetch('http://192.168.1.1:19999/api/v1/data?chart=net.br_lan&after=-1').then(function (response) {
+        fetch('http://192.168.10.1:19999/api/v1/data?chart=net.br_lan&after=-1').then(function (response) {
             return response.json();
         }).then(function (data){
             document.getElementById("guid").innerHTML = (data.data[0][2]/1000*-1).toFixed(2);
@@ -34,7 +34,7 @@ function getbrlan(){
         });
 }
 function getcpustat(){
-        fetch('http://192.168.1.1:19999/api/v1/data?chart=system.cpu&after=-1').then(function (response) {
+        fetch('http://192.168.10.1:19999/api/v1/data?chart=system.cpu&after=-1').then(function (response) {
             return response.json();
         }).then(function (data){
             document.getElementById("cpustat").innerHTML = (data.data[0][7]/1+1).toFixed(7);
@@ -44,7 +44,7 @@ function getcpustat(){
         });
 }
 function getramfree(){
-    fetch('http://192.168.1.1:19999/api/v1/data?chart=system.ram&after=-1').then(function (response) {
+    fetch('http://192.168.10.1:19999/api/v1/data?chart=system.ram&after=-1').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("ramfree").innerHTML = (data.data[0][1]/1000*1).toFixed(1);
@@ -54,7 +54,7 @@ function getramfree(){
     });
 }
 function getramused(){
-    fetch('http://192.168.1.1:19999/api/v1/data?chart=system.ram&after=-1').then(function (response) {
+    fetch('http://192.168.10.1:19999/api/v1/data?chart=system.ram&after=-1').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("ramused").innerHTML = (data.data[0][2]/1000*1).toFixed(2);
@@ -64,7 +64,7 @@ function getramused(){
     });
 }
 function geteth1(){
-    fetch('http://192.168.1.1:19999/api/v1/data?chart=net.eth1&after=-1').then(function (response) {
+    fetch('http://192.168.10.1:19999/api/v1/data?chart=net.eth1&after=-1').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("eth1").innerHTML = (data.data[0][2]/1000*-1).toFixed(2);
@@ -74,7 +74,7 @@ function geteth1(){
     });
 }
 function geteth2(){
-    fetch('http://192.168.1.1:19999/api/v1/data?chart=net.eth2&after=-1').then(function (response) {
+    fetch('http://192.168.10.1:19999/api/v1/data?chart=net.eth2&after=-1').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("eth2").innerHTML = (data.data[0][2]/1000*-1).toFixed(2);
@@ -84,7 +84,7 @@ function geteth2(){
     });
 }
 function getwwan0(){
-    fetch('http://192.168.1.1:19999/api/v1/data?chart=net.wwan0&after=-1').then(function (response) {
+    fetch('http://192.168.10.1:19999/api/v1/data?chart=net.wwan0&after=-1').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("wwan0").innerHTML = (data.data[0][2]/1000*-1).toFixed(2);
@@ -94,7 +94,7 @@ function getwwan0(){
     });
 }
 function getusb0(){
-    fetch('http://192.168.1.1:19999/api/v1/data?chart=net.usb0&after=-1').then(function (response) {
+    fetch('http://192.168.10.1:19999/api/v1/data?chart=net.usb0&after=-1').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("usb0").innerHTML = (data.data[0][2]/1000*-1).toFixed(2);
@@ -104,7 +104,7 @@ function getusb0(){
     });
 }
 function getsysboard(){
-    fetch('http://192.168.1.1/netdata/ubus/sysboard.json').then(function (response) {
+    fetch('http://192.168.10.1/netdata/ubus/sysboard.json').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("hostname").innerHTML = data.hostname;
@@ -119,7 +119,7 @@ function getsysboard(){
     });
 }
 function getsysboard2(){
-    fetch('http://192.168.1.1:19999/api/v1/info').then(function (response) {
+    fetch('http://192.168.10.1:19999/api/v1/info').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("ram").innerHTML = (data.ram_total/1000*1);
@@ -132,7 +132,7 @@ function getsysboard2(){
     });
 }
 function getbrlaninfo(){
-    fetch('http://192.168.1.1/netdata/ubus/brlan.json').then(function (response) {
+    fetch('http://192.168.10.1/netdata/ubus/brlan.json').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("available-brlan").innerHTML = data.available;
@@ -147,7 +147,7 @@ function getbrlaninfo(){
     });
 }
 function geteth1info(){
-    fetch('http://192.168.1.1/netdata/ubus/eth1.json').then(function (response) {
+    fetch('http://192.168.10.1/netdata/ubus/eth1.json').then(function (response) {
         return response.json();
     }).then(function (data){
         document.getElementById("available-eth1").innerHTML = data.available;

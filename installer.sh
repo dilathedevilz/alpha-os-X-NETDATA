@@ -47,6 +47,6 @@ function installing(){
 	rm -rf alpha-os-X-NETDATA
 	sleep 1
 	echo 'Installing Done...'
-	echo 'Please Check http://192.168.1.1/netdata'
+	echo 'Please Check http://192.168.10.1/netdata'
 }
 installing

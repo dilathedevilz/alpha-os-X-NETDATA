@@ -1,4 +1,4 @@
-fetch("http://192.168.1.1:19999/api/v1/info")
+fetch("http://192.168.10.1:19999/api/v1/info")
                 .then(response => response.json())
                 .then(data => {
                     console.log (data.os_version)

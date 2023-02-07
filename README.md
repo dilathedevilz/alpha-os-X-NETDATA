@@ -22,7 +22,7 @@ buat pengganti network monitor nya firmware sebelah masbro
 
 - Terinstall package `netdata ubus`
 - jika belum menginstall `netdata ubus` bisa eksekusi command ini di terminal `opkg update && opkg install netdata ubus`
-- IP Gateway harus `192.168.1.1` ( Soalnya kalau selain itu bakal ngedit banyak masbroooooo. )
+- IP Gateway harus `192.168.10.1` ( Soalnya kalau selain itu bakal ngedit banyak masbroooooo. )
 
 ## Cara Install Netdata
 ### Cara Susah
@@ -34,7 +34,7 @@ buat pengganti network monitor nya firmware sebelah masbro
 - Lalu ketik di terminal `chmod +x /sbin/netdata.sh`
 - Lanjot ketik di terminal `/sbin/netdata.sh`
 - Edit crontab / Scheduled task di LuCi dan tambahkan command `* */5 * * * /sbin/netdata.sh`
-- Tinggal Pancal di website http://192.168.1.1/netdata/
+- Tinggal Pancal di website http://192.168.10.1/netdata/
 Ready pamer dah akwoakaoak
 
 ### Cara Mudah
@@ -43,7 +43,7 @@ Ready pamer dah akwoakaoak
 - Masuk terminal jalankan command `opkg update && opkg install git git-http wget`
 - Jalankan lagi `wget https://raw.githubusercontent.com/derisamedia/alpha-os-X-NETDATA/main/installer.sh && chmod +x installer.sh`
 - Jalankan lagi `bash installer.sh` dan tunggu sampai proses selesai
-- done, tinggal pancal http://192.168.1.1/netdata/
+- done, tinggal pancal http://192.168.10.1/netdata/
 
 ## Konfigurasi Interface
 
