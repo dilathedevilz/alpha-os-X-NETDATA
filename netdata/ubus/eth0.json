@@ -5,9 +5,9 @@
 	"autostart": true,
 	"dynamic": false,
 	"uptime": 777,
-	"l3_device": "eth1",
+	"l3_device": "eth0",
 	"proto": "dhcp",
-	"device": "eth1",
+	"device": "eth0",
 	"updated": [
 		"addresses",
 		"routes",
@@ -18,7 +18,7 @@
 	"delegation": true,
 	"ipv4-address": [
 		{
-			"address": "192.168.8.107",
+			"address": "192.168.1.2",
 			"mask": 24
 		}
 	],
@@ -35,12 +35,12 @@
 		{
 			"target": "0.0.0.0",
 			"mask": 0,
-			"nexthop": "192.168.8.1",
-			"source": "192.168.8.107/32"
+			"nexthop": "192.168.1.1",
+			"source": "192.168.1.2/32"
 		}
 	],
 	"dns-server": [
-		"192.168.8.1"
+		"192.168.1.1"
 	],
 	"dns-search": [
 		

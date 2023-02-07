@@ -7,12 +7,12 @@ function startLiveUpdate () {
 		getcpustat();
         getramfree();
         getramused();
-        geteth1();
+        geteth0();
         geteth2();
         getwwan0();
         getusb0();
         getbrlaninfo();
-        geteth1info();
+        geteth0info();
     }, 2000);
     var intervalHandle = setInterval(function () {
         getsysboard();
@@ -63,12 +63,12 @@ function getramused(){
         console.log(error);
     });
 }
-function geteth1(){
-    fetch('http://192.168.10.1:19999/api/v1/data?chart=net.eth1&after=-1').then(function (response) {
+function geteth0(){
+    fetch('http://192.168.10.1:19999/api/v1/data?chart=net.eth0&after=-1').then(function (response) {
         return response.json();
     }).then(function (data){
-        document.getElementById("eth1").innerHTML = (data.data[0][2]/1000*-1).toFixed(2);
-        document.getElementById("eth1up").innerHTML = (data.data[0][1]/1000*1).toFixed(1);
+        document.getElementById("eth0").innerHTML = (data.data[0][2]/1000*-1).toFixed(2);
+        document.getElementById("eth0up").innerHTML = (data.data[0][1]/1000*1).toFixed(1);
     }).catch(function (error) {
         console.log(error);
     });
@@ -146,17 +146,17 @@ function getbrlaninfo(){
         console.log(error);
     });
 }
-function geteth1info(){
-    fetch('http://192.168.10.1/netdata/ubus/eth1.json').then(function (response) {
+function geteth0info(){
+    fetch('http://192.168.10.1/netdata/ubus/eth0.json').then(function (response) {
         return response.json();
     }).then(function (data){
-        document.getElementById("available-eth1").innerHTML = data.available;
-        document.getElementById("proto-eth1").innerHTML = data.proto;
-        document.getElementById("ipv4-eth1").innerHTML = data["ipv4-address"][0].address;
-        document.getElementById("ipv6-eth1").innerHTML = data["ipv6-prefix-assignment"][0];
-        document.getElementById("route-eth1").innerHTML = data["route"][0].source;
-        document.getElementById("dns1-eth1").innerHTML = data["dns-server"][0];
-        document.getElementById("device-eth1").innerHTML = data.device;
+        document.getElementById("available-eth0").innerHTML = data.available;
+        document.getElementById("proto-eth0").innerHTML = data.proto;
+        document.getElementById("ipv4-eth0").innerHTML = data["ipv4-address"][0].address;
+        document.getElementById("ipv6-eth0").innerHTML = data["ipv6-prefix-assignment"][0];
+        document.getElementById("route-eth0").innerHTML = data["route"][0].source;
+        document.getElementById("dns1-eth0").innerHTML = data["dns-server"][0];
+        document.getElementById("device-eth0").innerHTML = data.device;
     }).catch(function (error) {
         console.log(error);
     });
